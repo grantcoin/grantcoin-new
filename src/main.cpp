@@ -1385,10 +1385,7 @@ bool CTransaction::CheckInputs(CValidationState &state, CCoinsViewCache &inputs,
 		if (nTxFee < 0) //CODECOIN TODO: redundant check if we use GetMinFee below.
 			return state.DoS(100, error("CheckInputs() : %s nTxFee < 0", GetHash().ToString().c_str()));
 #if defined(PPCOINSTAKE) || defined (BRAND_grantcoin)
-#if defined(BRAND_givecoin)
-			// ppcoin: enforce transaction fees for every block
-			if (nSpendHeight >= CUTOFF_POS_BLOCK)
-#endif // hackity if
+// hackity if
 		if (nTxFee < GetMinFee())
 			return state.DoS(100, error("CheckInputs() : %s not paying required fee=%s, paid=%s", GetHash().ToString().c_str(), FormatMoney(GetMinFee()).c_str(), FormatMoney(nTxFee).c_str()));
 #endif
@@ -2282,11 +2279,7 @@ bool CBlock::CheckBlock(CValidationState &state, bool fCheckPOW, bool fCheckMerk
 #if defined(PPCOINSTAKE) || defined(BRAND_grantcoin)
 	// ppcoin: check block signature
 	// Only check block signature if check merkle root, c.f. commit 3cd01fdf
-#if defined(BRAND_givecoin) || defined(BRAND_hamburger) 
-	if (fCheckMerkleRoot && IsProofOfStake() && !CheckBlockSignature())
-#else 
 	if (fCheckMerkleRoot && !CheckBlockSignature())
-#endif
 		return state.DoS(100, error("CheckBlock() : bad block signature"));
 #endif
 	return true;
@@ -5312,14 +5305,10 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
 	}
 #endif	
 
-#if defined(BRAND_uro)
-	return;
-#else
 	if (fGenerate)
 		for (int i = 0; i < nThreads; i++)
 			minerThreads->create_thread(boost::bind(&CodecoinMiner, pwallet, false));
 
-#endif
 }
 
 // Amount compression:
