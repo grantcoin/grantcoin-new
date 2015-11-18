@@ -345,7 +345,7 @@
        <item row="16" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-          <string>Open the Codecoin debug log file from the current data directory. This can take a few seconds for large log files.</string>
+          <string>Open the Grantcoin debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
          <property name="text">
           <string>&amp;Open</string>
@@ -371,7 +371,7 @@
        <item row="18" column="0">
         <widget class="QPushButton" name="showCLOptionsButton">
          <property name="toolTip">
-          <string>Show the Codecoin-Qt help message to get a list with possible Codecoin command-line options.</string>
+          <string>Show the Grantcoin-Qt help message to get a list with possible Grantcoin command-line options.</string>
          </property>
          <property name="text">
           <string>&amp;Show</string>
