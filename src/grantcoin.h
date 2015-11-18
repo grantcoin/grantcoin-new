@@ -20,8 +20,6 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY = 500;
 
-#warning TODO: sanity check following
-
 static const int STAKE_TARGET_SPACING = 1.5 * 60; // 90-second block spacing 
 static const unsigned int nStakeMinAge = 60 * 60 * 24; // minimum age for coin age (24 hours)
 static const unsigned int nStakeMaxAge = 60 * 60 * 24 * 90; // stake age of full weight
@@ -33,9 +31,9 @@ extern const unsigned int nMaxClockDrift;
 /** Dust Soft Limit, allowed with additional fee per output */
 static const int64_t DUST_SOFT_LIMIT = CENT; // 0.01 GRT
 /** Dust Hard Limit, ignored as wallet inputs (mininput default) */
-static const int64_t DUST_HARD_LIMIT = 100;   // 0.00001 GRT mininput
+static const int64_t DUST_HARD_LIMIT = 100;   // 0.0001 GRT mininput
 
-/** main.h CTransaction:AllowFree **/
+/** main.h CTransaction:AllowFree  This doesn't get used for Grantcoin. **/
 static const int MIN_FREE_PRIORITY = COIN * 960 / 250;
 
 /** The interval over which we look to calculate the next difficulty **/
