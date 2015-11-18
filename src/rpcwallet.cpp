@@ -119,7 +119,7 @@ Value getinfo(const Array& params, bool fHelp)
     return obj;
 }
 
-#if defined(BRAND_bluecoin) || defined(RPC_getnewpubkey)
+#if defined(RPC_getnewpubkey)
 /* does not compile, newKey.Raw() is gone */
 Value getnewpubkey(const Array& params, bool fHelp)
 {
