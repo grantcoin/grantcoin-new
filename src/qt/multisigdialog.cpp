@@ -479,13 +479,13 @@ void MultisigDialog::on_sendTransactionButton_clicked()
 	int64_t minFee = CTransaction::nMinTxFee * (1 + (int64_t) transactionSize / 1000);
 	if(fee < minFee)
 	{
-		QMessageBox::StandardButton ret = QMessageBox::question(this, tr("Confirm send transaction"), tr("The fee of the transaction (%1 BLU) is smaller than the expected fee (%2 BLU). Do you want to send the transaction anyway?").arg((double) fee / COIN).arg((double) minFee / COIN), QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
+		QMessageBox::StandardButton ret = QMessageBox::question(this, tr("Confirm send transaction"), tr("The fee of the transaction (%1 GRT) is smaller than the expected fee (%2 GRT). Do you want to send the transaction anyway?").arg((double) fee / COIN).arg((double) minFee / COIN), QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
 		if(ret != QMessageBox::Yes)
 			return;
 	}
 	else if(fee > minFee)
 	{
-		QMessageBox::StandardButton ret = QMessageBox::question(this, tr("Confirm send transaction"), tr("The fee of the transaction (%1 BLU) is bigger than the expected fee (%2 BLU). Do you want to send the transaction anyway?").arg((double) fee / COIN).arg((double) minFee / COIN), QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
+		QMessageBox::StandardButton ret = QMessageBox::question(this, tr("Confirm send transaction"), tr("The fee of the transaction (%1 GRT) is bigger than the expected fee (%2 GRT). Do you want to send the transaction anyway?").arg((double) fee / COIN).arg((double) minFee / COIN), QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
 		if(ret != QMessageBox::Yes)
 			return;
 	}
