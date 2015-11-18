@@ -16,10 +16,10 @@
 using namespace std;
 
 // Protocol switch time of v0.3 kernel protocol
-unsigned int nProtocolV03SwitchTime     = 1451606400; // 2016-01-01 00:00:00 UTC
+unsigned int nProtocolV03SwitchTime     = 1735689600; // 2025-01-01 00:00:00 UTC
 unsigned int nProtocolV03TestSwitchTime = 1359781000;
 // Protocol switch time of v0.4 kernel protocol
-unsigned int nProtocolV04SwitchTime     = 1452211200; // 2016-01-08 00:00:00 UTC
+unsigned int nProtocolV04SwitchTime     = 1736294400; // 2025-01-08 00:00:00 UTC
 unsigned int nProtocolV04TestSwitchTime = 1395700000;
 // TxDB upgrade time for v0.4 protocol
 // Note: v0.4 upgrade does not require block chain re-download. However,
