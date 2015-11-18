@@ -27,42 +27,7 @@ contains(COIN_BRAND, grantstake) {
     DEFINES += BRAND_grantstake
     STAKE = 1
     TARGET = grantstake
-} else {
-contains(COIN_BRAND, catcoin) {
-    message(Building for Catcoin)
-    DEFINES += BRAND_catcoin
-    HASHSCRYPT = 1
-    TARGET = catcoin
-} else {
-contains(COIN_BRAND, givecoin) {
-    message(Building for Givecoin)
-    DEFINES += BRAND_givecoin
-    TARGET = givecoin
-    HASHSCRYPT = 1
-} else {
-contains(COIN_BRAND, hamburger) {
-    DEFINES += BRAND_hamburger
-    TARGET = hamburger
-    HASHSCRYPT = 1
-    STAKE = 1
-} else {
-contains(COIN_BRAND, givestake) { # for testing, for now
-    DEFINES += BRAND_givecoin PPCOINSTAKE
-    TARGET = givestake
-    STAKE = 1
-    HASHSCRYPT = 1
-} else {
-contains(COIN_BRAND, bluecoin) {
-    DEFINES += BRAND_bluecoin
-    TARGET = bluecoin
-    STAKE = 1
-    HASHSCRYPT = 1
-    HASHX11 = 1
-} else {
-    DEFINES += BRAND_codecoin
-    TARGET = codecoin
-	warning ("Building GENERIC codecoin, probably will not work")
-}}}}}}}
+}}
 
 # for boost 1.37, add -mt to the boost libraries
 # use: qmake BOOST_LIB_SUFFIX=-mt
