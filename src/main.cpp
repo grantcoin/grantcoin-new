@@ -4692,9 +4692,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet)
 			nLastCoinStakeSearchTime = nSearchTime;
 		}
 
-#if defined(BRAND_givecoin) || defined(BRAND_hamburger)
-		pblock->nVersion = CBlockHeader::CURRENT_VERSION_PoS;
-#endif
 	}
 
 	pblock->nBits = GetNextTrustRequired(pindexPrev, pblock);
