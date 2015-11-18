@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>CodeCoin debug window</string>
+   <string>Grantcoin debug window</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
