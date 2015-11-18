@@ -71,7 +71,7 @@ double dHashesPerSec = 0.0;
 int64_t nHPSTimerStart = 0;
 
 // Settings
-int64_t nTransactionFee = 0;
+int64_t nTransactionFee = 0.01;
 int64_t nMinimumInputValue = DUST_HARD_LIMIT;
 int64_t nMaxFutureTime = 30;
 
