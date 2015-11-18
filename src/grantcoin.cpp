@@ -144,10 +144,8 @@ int64_t GetProofOfWorkReward(int nHeight)
         nSubsidy = 50 * COIN;
     else if (nHeight < 300000)
         nSubsidy = 25 * COIN;
-    else if (nHeight < 350000)
-        nSubsidy = 12.5 * COIN;
-    else if (nHeight >= 350000)
-        nSubsidy = 6.25 * COIN;  // Final minimum reward for PoW phase
+    else if (nHeight >= 300000)
+        nSubsidy = 10 * COIN;  // Final minimum reward for PoW phase
 
     // if (fDebug && GetBoolArg("-printcreation"))
     //     printf("GetProofOfWorkReward() : create=%s nBits=0x%08x nSubsidy=%"PRI64d"\n", FormatMoney(nSubsidy).c_str(), nBits, nSubsidy);
