@@ -1,1 +1,0 @@
-givecoin.cpp
