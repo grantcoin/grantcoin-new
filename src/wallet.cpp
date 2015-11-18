@@ -1514,10 +1514,6 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
             // Search nSearchInterval seconds back up to nMaxStakeSearchInterval
             uint256 hashProofOfStake = 0;
             COutPoint prevoutStake = COutPoint(pcoin.first->GetHash(), pcoin.second);
-#if defined(BRAND_givecoin) || defined(BRAND_hamburger) /* coins that change CTransaction version */
-            if (pcoin.first->nVersion < pcoin.first->VERSION_nTime)
-		break;
-#endif
 #warning debug
             if (fDebug && GetBoolArg("-printbeforestakecheck"))
 		pcoin.first->print();
