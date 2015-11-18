@@ -30,15 +30,7 @@ extern const std::string CLIENT_DATE;
 // network protocol versioning
 //
 
-#if defined(BRAND_ppcoin) || defined(BRAND_bluecoin)
-static const int PROTOCOL_VERSION = 71001;
-#elif defined(BRAND_givecoin)
-static const int PROTOCOL_VERSION = 70003; // bump to 71001 for PoS?
-static const int MIN_PEER_PROTO_VERSION = 70002;
-#elif defined(BRAND_uro)
-static const int PROTOCOL_VERSION = 70013;
-static const int MIN_PEER_PROTO_VERSION = 70012;
-#elif defined(BRAND_grantcoin) 
+#if defined(BRAND_grantcoin) 
 /* grantstake should probably actually use 70002 */
 static const int PROTOCOL_VERSION = 70001;
 static const int MIN_PEER_PROTO_VERSION = 60004;
@@ -61,16 +53,9 @@ static const int MIN_PROTO_VERSION = 209;
 // if possible, avoid requesting addresses nodes older than this
 static const int CADDR_TIME_VERSION = 31402;
 
-#if defined(BRAND_bluecoin) || defined (BRAND_ppcoin)
-// TODO: move to some sort of codecoin object
-// only request blocks from nodes outside this range of versions
-static const int NOBLKS_VERSION_START = 60002;
-static const int NOBLKS_VERSION_END = 70900;
-#else
 // only request blocks from nodes outside this range of versions
 static const int NOBLKS_VERSION_START = 32000;
 static const int NOBLKS_VERSION_END = 32400;
-#endif
 
 // BIP 0031, pong message, is enabled for all versions AFTER this one
 static const int BIP0031_VERSION = 60000;
