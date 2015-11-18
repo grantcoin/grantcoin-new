@@ -77,17 +77,8 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
-            <property name="font">
-             <font>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font-weight:bold;</string>
-            </property>
             <property name="text">
-             <string>Coin Control Features</string>
+             <string>Coin Control Features (optional - advanced users only):</string>
             </property>
            </widget>
           </item>
