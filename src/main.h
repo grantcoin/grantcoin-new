@@ -506,19 +506,8 @@ class CTransaction
 public:
 	static int64_t nMinTxFee;
 	static int64_t nMinRelayTxFee;
-#if defined(BRAND_givecoin) //|| defined(BRAND_hamburger)
-	/* for now we leave VERSION_nTime at 3, and generate version 1 blocks to be compatible when mining */
-	static const int CURRENT_VERSION = 1, VERSION_nTime = 3;
-	static const int LEGACY_VERSION=2;	/* work around bogus v2 ctx in block 168521 */
-#elif defined(BRAND_hamburger)
-	static const int CURRENT_VERSION = 2, VERSION_nTime = 2;
-	static const int LEGACY_VERSION=1;
-#elif defined(BRAND_grantcoin)
+#if defined(BRAND_grantcoin)
 	static const int CURRENT_VERSION = 1;
-#elif defined(BRAND_solarcoin)
-	static const int CURRENT_VERSION_1 = 3, VERSION_nTime = 2;
-	static const int LEGACY_VERSION_1 = 1;
-	std::string strTxComment;
 #else
 	static const int CURRENT_VERSION = 1, VERSION_nTime = 1;
 #endif
@@ -540,22 +529,11 @@ public:
 		READWRITE(this->nVersion);
 		nVersion = this->nVersion;
 #if defined(PPCOINSTAKE) || defined(BRAND_grantcoin)
-#if defined(BRAND_givecoin)
-		if(this->nVersion > LEGACY_VERSION) { 
-			READWRITE(nTime);
-		}
-#else
 		READWRITE(nTime);
-#endif
 #endif
 		READWRITE(vin);
 		READWRITE(vout);
 		READWRITE(nLockTime);
-#if defined(BRAND_solarcoin)
-		if(this->nVersion > LEGACY_VERSION_1) { 
-        		READWRITE(strTxComment);
-		}
-#endif
 	)
 
 	void SetNull()
@@ -564,9 +542,7 @@ public:
 		vin.clear();
 		vout.clear();
 		nLockTime = 0;
-#if defined(BRAND_solarcoin)
-		strTxComment.clear();
-#elif defined(PPCOINSTAKE) || defined(BRAND_grantcoin)
+#if defined(PPCOINSTAKE) || defined(BRAND_grantcoin)
 		nTime = GetAdjustedTime();
 #endif
 	}
@@ -643,12 +619,8 @@ public:
 		// givecoin: Do we want this, or something else?
 		return (vin.size() > 0 && (!vin[0].prevout.IsNull()) && vout.size() >= 2 && vout[0].IsEmpty());
 	}
-#if !defined(BRAND_givecoin)
-	bool has_nTime() const { return true; };
-#else
 #warning "this is rather a hack, and it still doesn't work yet"
 	bool has_nTime() const { return nVersion > LEGACY_VERSION; };
-#endif 
 #else
 	inline bool IsCoinStake() const { return false; };
 #endif
@@ -767,9 +739,6 @@ public:
 #else
 		str += strprintf("CTransaction(hash=%s, ver=%d, vin.size=%" PRIszu", vout.size=%" PRIszu", nLockTime=%u)\n",
 			GetHash().ToString().c_str(),
-#if defined(BRAND_solarcoin)
-#warning "need to implement ToString of txt comment too"
-#endif 
 #endif
 			nVersion,
 			vin.size(),
@@ -1340,15 +1309,13 @@ class CBlockHeader
 {
 public:
 	// header
-#if defined(BRAND_givecoin) || defined(BRAND_hamburger) || defined (BRAND_grantstake)
+#if defined (BRAND_grantstake)
 /* Optionally overload lowest bit of nVersion as the 'proof-of-work' indicator,
    instead of overloading the vtx'es */
 	static const int VERSION_STAKE_START=2;
 	static const int CURRENT_VERSION=2;
 	static const int CURRENT_VERSION_PoW = CURRENT_VERSION;
 	static const int CURRENT_VERSION_PoS = CURRENT_VERSION | 1;
-#elif defined(BRAND_bluecoin)
-	static const int CURRENT_VERSION=4;
 #elif defined(BRAND_grantcoin)
 	// TODO: re-endianize when we go to version 2/4 for GRT
 	static const int VERSION_STAKE_START=2;
@@ -1397,27 +1364,8 @@ public:
 
 	uint256 GetHash() const
 	{
-#if defined(BRAND_uro) || defined(BRAND_givecoin) 
-		return Hash11(BEGIN(nVersion), END(nNonce));
-#elif defined(BRAND_bluecoin)
-		if (nTime < X11_CUTOFF_TIME)
-		{
-			uint256 thash;
-			void * scratchbuff = scrypt_buffer_alloc();
-
-			scrypt_hash(CVOIDBEGIN(nVersion), sizeof(block_header), UINTBEGIN(thash), scratchbuff);
-
-			scrypt_buffer_free(scratchbuff);
-
-			return thash;
-		}
-		else
-		{
-			return Hash11(BEGIN(nVersion), END(nNonce));
-		}
-#else /* Generic 'Hash' function, which should be fast */
+/* Generic 'Hash' function, which should be fast */
 		return Hash(BEGIN(nVersion), END(nNonce));
-#endif
 	}
 
 	uint256 GetPoWHash() const
@@ -1520,7 +1468,7 @@ public:
 	// ppcoin: two types of block: proof-of-work or proof-of-stake
 	bool IsProofOfStake() const
 	{
-#if defined(BRAND_givecoin) || defined(BRAND_hamburger) || defined(BRAND_grantstake)
+#if defined(BRAND_grantstake)
 		/* Before you try to be clever here, read the assembly code, because
 		   the compiler is smarter and more deterministic than you are */
 
@@ -1645,10 +1593,6 @@ public:
 			return error("CBlock::WriteToDisk() : OpenBlockFile failed");
 
 		// Write index header
-#if defined(BRAND_bluecoin) /* Coins that had to switch PCH messages */
-		unsigned char pchMessageStart[4];
-		GetMessageStart(pchMessageStart, true);
-#endif
 		unsigned int nSize = fileout.GetSerializeSize(*this);
 		fileout << FLATDATA(pchMessageStart) << nSize;
 
