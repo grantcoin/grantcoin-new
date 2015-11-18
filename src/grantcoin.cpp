@@ -68,13 +68,13 @@ int64_t GetProofOfWorkRewardTestNet(int nHeight)
 {
     int64_t nSubsidy = COIN;
     if (nHeight == 1)
-        nSubsidy = 10000000000 * COIN;  // Grantcoin created for planned distribution
+        nSubsidy = 10000000000 * COIN;
     else if (nHeight < 500)
-        nSubsidy = CENT;  // De minimus reward pre-launch and up to 2 weeks post-launch
+        nSubsidy = CENT;
     else if (nHeight < 510)
-        nSubsidy = 6.25 * COIN;  // Public mining begins
+        nSubsidy = 6.25 * COIN;
     else if (nHeight < 520)
-        nSubsidy = 12.5 * COIN;  // Reward gradually increases during first few days
+        nSubsidy = 12.5 * COIN;
     else if (nHeight < 530)
         nSubsidy = 25 * COIN;
     else if (nHeight < 540)
@@ -92,7 +92,7 @@ int64_t GetProofOfWorkRewardTestNet(int nHeight)
     else if (nHeight < 2500)
         nSubsidy = 50 * COIN;
     else if (nHeight < 3000)
-        nSubsidy = 25 * COIN;  // PoW-PoS hybrid phase begins
+        nSubsidy = 25 * COIN;
     else if (nHeight < 3500)
         nSubsidy = 12.5 * COIN;
     else if (nHeight < 4000)
@@ -143,13 +143,11 @@ int64_t GetProofOfWorkReward(int nHeight)
     else if (nHeight < 250000)
         nSubsidy = 50 * COIN;
     else if (nHeight < 300000)
-        nSubsidy = 25 * COIN;  // PoW-PoS hybrid phase begins
+        nSubsidy = 25 * COIN;
     else if (nHeight < 350000)
         nSubsidy = 12.5 * COIN;
-    else if (nHeight < 400000)
-        nSubsidy = 6.25 * COIN;
-    else if (nHeight >= 400000)
-        nSubsidy = CENT;  // PoW reward phased out to de minimus value
+    else if (nHeight >= 350000)
+        nSubsidy = 6.25 * COIN;  // Final minimum reward for PoW phase
 
     // if (fDebug && GetBoolArg("-printcreation"))
     //     printf("GetProofOfWorkReward() : create=%s nBits=0x%08x nSubsidy=%"PRI64d"\n", FormatMoney(nSubsidy).c_str(), nBits, nSubsidy);
