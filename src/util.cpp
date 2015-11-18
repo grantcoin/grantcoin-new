@@ -1104,7 +1104,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "catoshi" / BRAND_lower;
+    return GetSpecialFolderPath(CSIDL_APPDATA) / BRAND_upper;
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1116,10 +1116,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "catoshi" / BRAND_lower;
+    return pathRet / BRAND_upper;
 #else
     // Unix
-    return pathRet / ".catoshi" / BRAND_lower;
+    return pathRet / "." BRAND_lower;
 #endif
 #endif
 }
