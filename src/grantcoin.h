@@ -45,8 +45,8 @@ static const int RETARGET_INTERVAL = 36;
 /** Minimum block time spacing (hard limit) **/
 static const int64_t MINIMUM_BLOCK_SPACING = 60;	// Absolute minimum spacing
 
-#define BRAND "GrantCoint"
-#define BRAND_upper "GrantCoin"
+#define BRAND "Grantcoin"
+#define BRAND_upper "Grantcoin"
 #define BRAND_lower "grantcoin"
 #define BRAND_domain "grantcoin.org"
 #define BRAND_CODE "GRT"
