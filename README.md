@@ -8,4 +8,4 @@ Grantcoin Official Code Repository
 The official Grantcoin code, contained in this repository, is distributed under the MIT/X11 software license. See COPYING file and [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php) for more information.
 
 ### Development process
-Anyone who would like to join the Grantcoin development team, to help with coding and/or testing and debugging, please [contact the Grantcoin Foundation](http://www.grantcoin.org/contact/). We are always interested to have more input and assistance to continue developing the Grantcoin code and software.
+Anyone who would like to join the Grantcoin development team as a volunteer, to help with coding and/or testing and debugging, please [contact the Grantcoin Foundation](http://www.grantcoin.org/contact/). We are always interested to receive more input and assistance to continue developing the Grantcoin code and software.
