@@ -736,7 +736,7 @@ void CodecoinGUI::closeEvent(QCloseEvent *event)
 void CodecoinGUI::askFee(qint64 nFeeRequired, bool *payFee)
 {
     QString strMessage =
-        tr("This transaction is over the size limit. You can still send it for a fee of %1. Do you want to pay the fee?").arg(
+        tr("This transaction requires a fee of %1. Transaction fees help to protect the Grantcoin network. Pay the fee and continue?").arg(
                 CodecoinUnits::formatWithUnit(CodecoinUnits::CC, nFeeRequired));
     QMessageBox::StandardButton retval = QMessageBox::question(
           this, tr("Sending..."), strMessage,
