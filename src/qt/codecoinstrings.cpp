@@ -21,7 +21,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "An error occurred while setting up the RPC port %u for listening on IPv6, "
 "falling back to IPv4: %s"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
-"Cannot obtain a lock on data directory %s. Catcoin is probably already "
+"Cannot obtain a lock on data directory %s. Grantcoin is probably already "
 "running."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Error: The transaction was rejected! This might happen if some of the coins "
@@ -51,7 +51,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "This is a pre-release test build - use at your own risk - do not use for "
 "mining or merchant applications"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
-"Unable to bind to %s on this computer. Catcoin is probably already running."),
+"Unable to bind to %s on this computer. Grantcoin is probably already running."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Warning: -paytxfee is set very high! This is the transaction fee you will "
 "pay if you send a transaction."),
@@ -60,7 +60,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "or other nodes may need to upgrade."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong Catcoin will not work properly."),
+"your clock is wrong Grantcoin will not work properly."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Warning: error reading wallet.dat! All keys read correctly, but transaction "
 "data or address book entries might be missing or incorrect."),
@@ -164,7 +164,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Rebuild block chain index from current blk000
 QT_TRANSLATE_NOOP("bitcoin-core", "Rescan the block chain for missing wallet transactions"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Rescanning..."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Run in the background as a daemon and accept commands"),
-QT_TRANSLATE_NOOP("bitcoin-core", "SSL options: (see the codecoin Wiki for SSL setup instructions)"),
+QT_TRANSLATE_NOOP("bitcoin-core", "SSL options: (see the Grantcoin Wiki for SSL setup instructions)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Select the version of socks proxy to use (4-5, default: 5)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Send command to -server or "),
 QT_TRANSLATE_NOOP("bitcoin-core", "Send command to -server or bitcoind"),
