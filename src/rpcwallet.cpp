@@ -104,15 +104,15 @@ Value getinfo(const Array& params, bool fHelp)
 	obj.push_back(Pair("timeoffset",	(boost::int64_t)GetTimeOffset()));
 	obj.push_back(Pair("connections",	(int)vNodes.size()));
 	obj.push_back(Pair("proxy",			(proxy.first.IsValid() ? proxy.first.ToStringIPPort() : string())));
-	obj.push_back(Pair("ip",			  addrSeenByPeer.ToStringIP()));
+	obj.push_back(Pair("ip",			  addrSeenByPeer.ToStringIP()));  // fixme: currently displaying 0.0.0.0
 	obj.push_back(Pair("difficulty",	(double)GetDifficulty()));
 	obj.push_back(Pair("testnet",		fTestNet));
     if (pwalletMain) {
         obj.push_back(Pair("keypoololdest", (boost::int64_t)pwalletMain->GetOldestKeyPoolTime()));
 		obj.push_back(Pair("keypoolsize",	(int)pwalletMain->GetKeyPoolSize()));
     }
-	obj.push_back(Pair("paytxfee",		ValueFromAmount(nTransactionFee)));
-	obj.push_back(Pair("mininput",		ValueFromAmount(nMinimumInputValue)));
+	obj.push_back(Pair("paytxfee",		(int64)MIN_TX_FEE));  // fixme: this is a temporary hack
+	obj.push_back(Pair("mininput",		(int64)MIN_TXOUT_AMOUNT));  // fixme: this is a temporary hack
     if (pwalletMain && pwalletMain->IsCrypted())
         obj.push_back(Pair("unlocked_until", (boost::int64_t)nWalletUnlockTime));
 	obj.push_back(Pair("errors",		GetWarnings("statusbar")));
