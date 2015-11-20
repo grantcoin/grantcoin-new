@@ -153,6 +153,94 @@ int64_t GetProofOfWorkReward(int nHeight)
     return nSubsidy;
 }
 
+//
+// Calculate total coins created on testnet and main net.
+// This is an approximate moneysupply, not subtracting coins destroyed in transaction fees.
+//
+int64_t TotalCoinsCreatedTestNet(int nHeight)
+{
+    int64_t nTotalCoins = 0;
+    if (nHeight == 1)
+        nTotalCoins = 10000000000;
+    else if (nHeight < 500)
+        nTotalCoins = 10000000000 + ((nHeight - 1) * 0.01);
+    else if (nHeight < 510)
+        nTotalCoins = 10000000004.98 + ((nHeight - 499) * 6.25);
+    else if (nHeight < 520)
+        nTotalCoins = 10000000067.48 + ((nHeight - 509) * 12.5);
+    else if (nHeight < 530)
+        nTotalCoins = 10000000192.48 + ((nHeight - 519) * 25);
+    else if (nHeight < 540)
+        nTotalCoins = 10000000442.48 + ((nHeight - 529) * 50);
+    else if (nHeight < 550)
+        nTotalCoins = 10000000942.48 + ((nHeight - 539) * 100);
+    else if (nHeight < 560)
+        nTotalCoins = 10000001942.48 + ((nHeight - 549) * 200);
+    else if (nHeight < 1000)
+        nTotalCoins = 10000003942.48 + ((nHeight - 559) * 400);
+    else if (nHeight < 1500)
+        nTotalCoins = 10000179942.48 + ((nHeight - 999) * 200);
+    else if (nHeight < 2000)
+        nTotalCoins = 10000279942.48 + ((nHeight - 1499) * 100);
+    else if (nHeight < 2500)
+        nTotalCoins = 10000329942.48 + ((nHeight - 1999) * 50);
+    else if (nHeight < 3000)
+        nTotalCoins = 10000354942.48 + ((nHeight - 2499) * 25);
+    else if (nHeight < 3500)
+        nTotalCoins = 10000367442.48 + ((nHeight - 2999) * 12.5);
+    else if (nHeight < 4000)
+        nTotalCoins = 10000373692.48 + ((nHeight - 3499) * 6.25);
+    else if (nHeight < 4500)
+        nTotalCoins = 10000376817.48 + ((nHeight - 3999) * 3.13);
+    else if (nHeight < 5000)
+        nTotalCoins = 10000378382.48 + ((nHeight - 4499) * 1.57);
+    else if (nHeight >= 5000)
+        nTotalCoins = 10000379167.48 + ((nHeight - 4999) * 1);
+
+    return nTotalCoins;
+}
+
+int64_t TotalCoinsCreated(int nHeight)
+{
+    int64_t nTotalCoins = 0;
+/* kludge */
+    if (fTestNet){
+	return TotalCoinsCreatedTestNet(nHeight);
+    }
+
+    if (nHeight == 1)
+        nTotalCoins = 10000000000;
+    else if (nHeight < 50000)
+        nTotalCoins = 10000000000 + ((nHeight - 1) * 0.01);
+    else if (nHeight < 51000)
+        nTotalCoins = 10000000499.98 + ((nHeight - 49999) * 6.25);
+    else if (nHeight < 52000)
+        nTotalCoins = 10000006749.98 + ((nHeight - 50999) * 12.5);
+    else if (nHeight < 53000)
+        nTotalCoins = 10000019249.98 + ((nHeight - 51999) * 25);
+    else if (nHeight < 54000)
+        nTotalCoins = 10000044249.98 + ((nHeight - 52999) * 50);
+    else if (nHeight < 55000)
+        nTotalCoins = 10000094249.98 + ((nHeight - 53999) * 100);
+    else if (nHeight < 56000)
+        nTotalCoins = 10000194249.98 + ((nHeight - 54999) * 200);
+    else if (nHeight < 100000)
+        nTotalCoins = 10000394249.98 + ((nHeight - 55999) * 400);
+    else if (nHeight < 150000)
+        nTotalCoins = 10017994249.98 + ((nHeight - 99999) * 200);
+    else if (nHeight < 200000)
+        nTotalCoins = 10027994249.98 + ((nHeight - 149999) * 100);
+    else if (nHeight < 250000)
+        nTotalCoins = 10032994249.98 + ((nHeight - 199999) * 50);
+    else if (nHeight < 300000)
+        nTotalCoins = 10035494249.98 + ((nHeight - 249999) * 25);
+    else if (nHeight >= 300000)
+        nTotalCoins = 10036744249.98 + ((nHeight - 299999) * 10);
+
+    return nTotalCoins;
+}
+
+
 // peercoin: miner's coin stake is rewarded based on coin age spent (coin-days)
 int64_t PPCoin_StakeReward(int64_t nCoinAge)
 {
