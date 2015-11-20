@@ -99,7 +99,7 @@ Value getinfo(const Array& params, bool fHelp)
 	obj.push_back(Pair("moneysupply",	ValueFromAmount(pindexBest->nMoneySupply)));
 #elif defined(BRAND_grantcoin)
 	// fixme: this is a temporary hack
-	obj.push_back(Pair("moneysupply",	(int64_t)TotalCoinsCreated(int nHeight)));
+	obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreated(int nHeight)));
 #endif	  
 	obj.push_back(Pair("blocks",		(int)nBestHeight));
 	obj.push_back(Pair("timeoffset",	(boost::int64_t)GetTimeOffset()));
@@ -112,8 +112,8 @@ Value getinfo(const Array& params, bool fHelp)
         obj.push_back(Pair("keypoololdest", (boost::int64_t)pwalletMain->GetOldestKeyPoolTime()));
 		obj.push_back(Pair("keypoolsize",	(int)pwalletMain->GetKeyPoolSize()));
     }
-	obj.push_back(Pair("paytxfee",		(int64)MIN_TX_FEE));  // fixme: this is a temporary hack
-	obj.push_back(Pair("mininput",		(int64)MIN_TXOUT_AMOUNT));  // fixme: this is a temporary hack
+	obj.push_back(Pair("paytxfee",		(boost::int64_t)MIN_TX_FEE));  // fixme: this is a temporary hack
+	obj.push_back(Pair("mininput",		(boost::int64_t)MIN_TXOUT_AMOUNT));  // fixme: this is a temporary hack
     if (pwalletMain && pwalletMain->IsCrypted())
         obj.push_back(Pair("unlocked_until", (boost::int64_t)nWalletUnlockTime));
 	obj.push_back(Pair("errors",		GetWarnings("statusbar")));
