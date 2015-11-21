@@ -17,8 +17,8 @@ static const int COIN_DECIMALS = 6; /* decimal places for coin */
 static const int64_t MAX_MONEY = 50000000000 * COIN;
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
-static const int64_t MIN_TX_FEE = 0.01;
-static const int64_t MIN_TXOUT_AMOUNT = MIN_TX_FEE;
+static const float MIN_TX_FEE = 0.01;
+static const float MIN_TXOUT_AMOUNT = MIN_TX_FEE;
 
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY = 500;
