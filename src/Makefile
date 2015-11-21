@@ -193,19 +193,6 @@ endif
 ifeq ($(COIN_BRAND),grantstake)
 OBJS += $(STAKE_OBJS)
 endif
-ifeq ($(COIN_BRAND),uro)
-OBJS += $(X11_OBJS)
-endif
-ifeq ($(COIN_BRAND),givecoin)
-OBJS += $(X11_OBJS) $(STAKE_OBJS)
-endif
-ifeq ($(COIN_BRAND),hamburger)
-DEFS += -DUSE_SCRYPT
-OBJS += $(SCRYPT_OBJS) $(STAKE_OBJS)
-endif
-ifeq ($(COIN_BRAND),bluecoin)
-OBJS += $(SCRYPT_OBJS) $(X11_OBJS) $(STAKE_OBJS)
-endif
 
 all: $(TESTDIR) $(COIN_BRAND)d
 
