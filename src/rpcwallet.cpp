@@ -120,16 +120,6 @@ int64_t TotalCoinsCreated(int nHeight)
     return nTotalCoins;
 }
 
-int64_t GetTotalCoinsCreatedTestNet()
-{
-    return TotalCoinsCreatedTestNet;
-}
-
-int64_t GetTotalCoinsCreated()
-{
-    return TotalCoinsCreated;
-}
-
 
 std::string HelpRequiringPassphrase()
 {
@@ -173,7 +163,7 @@ string AccountFromValue(const Value& value)
     return strAccount;
 }
 
-Value getinfo(const Array& params, bool fHelp)
+Value getinfo(const Array& params, bool fHelp, int nHeight)
 {
     if (fHelp || params.size() != 0)
         throw runtime_error(
@@ -198,9 +188,9 @@ Value getinfo(const Array& params, bool fHelp)
 #elif defined(BRAND_grantcoin)
 	// fixme: this is a temporary hack
 	if (fTestNet)
-		obj.push_back(Pair("moneysupply",	(boost::int64_t)GetTotalCoinsCreatedTestNet()));
+		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreatedTestNet(nHeight)));
 	else
-		obj.push_back(Pair("moneysupply",	(boost::int64_t)GetTotalCoinsCreated()));
+		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreated(nHeight)));
 #endif	  
 	obj.push_back(Pair("blocks",		(int)nBestHeight));
 	obj.push_back(Pair("timeoffset",	(boost::int64_t)GetTimeOffset()));
