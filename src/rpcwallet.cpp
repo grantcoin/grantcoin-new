@@ -188,9 +188,9 @@ Value getinfo(const Array& params, bool fHelp)
 #elif defined(BRAND_grantcoin)
 	// fixme: this is a temporary hack
 	if (fTestNet)
-		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreatedTestNet()));
+		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreatedTestNet(nHeight)));
 	else
-		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreated()));
+		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreated(nHeight)));
 #endif	  
 	obj.push_back(Pair("blocks",		(int)nBestHeight));
 	obj.push_back(Pair("timeoffset",	(boost::int64_t)GetTimeOffset()));
