@@ -196,7 +196,7 @@ Value getinfo(const Array& params, bool fHelp)
 //		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreatedTestNet(nHeight)));
 //	else
 //		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreated(nHeight)));
-//#endif	  
+#endif	  
 	obj.push_back(Pair("blocks",		(int)nBestHeight));
 	obj.push_back(Pair("timeoffset",	(boost::int64_t)GetTimeOffset()));
 	obj.push_back(Pair("connections",	(int)vNodes.size()));
