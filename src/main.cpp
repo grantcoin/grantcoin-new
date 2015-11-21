@@ -2189,7 +2189,7 @@ bool CBlock::CheckBlock(CValidationState &state, bool fCheckPOW, bool fCheckMerk
 	if (GetBlockTime() > GetAdjustedTime() + nMaxClockDrift)
 		return state.Invalid(error("CheckBlock() : block timestamp too far in the future"));
 
-	#warning "debug for givecoin"
+//	#warning "debug for givecoin"
 	if (vtx.empty()){
 		printf("EMPTY VTX in\n");
 		print();
@@ -2197,7 +2197,7 @@ bool CBlock::CheckBlock(CValidationState &state, bool fCheckPOW, bool fCheckMerk
 
 	// First transaction must be coinbase, the rest must not be
 	if (vtx.empty() || !vtx[0].IsCoinBase()){
-#warning more debug than we really need
+// #warning more debug than we really need
 		printf("first tx not coinbase in\n");
 		print();
 		return state.DoS(100, error("CheckBlock() : first tx is not coinbase"));
@@ -2440,7 +2440,7 @@ bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, uns
 {
 #if defined(BRAND_grantcoin)
 	// Codecoin: temporarily disable v2 block lockin until we are ready for v2 transition
-	#warning "IsSuperMajority DISABLED"
+//	#warning "IsSuperMajority DISABLED"
 	return false;
 #endif
 	unsigned int nFound = 0;
@@ -5258,7 +5258,7 @@ void CodecoinMiner(CWallet *pwallet, bool fProofOfStake)
 			pblock->nTime = max(pblock->GetBlockTime(), pindexPrev->GetBlockTime() - nMaxClockDrift);
 #endif
 			pblock->UpdateTime(pindexPrev);
-			#warning little-endian-ism
+//			#warning little-endian-ism
 			nBlockTime = ByteReverse(pblock->nTime);
 			if (fTestNet)
 			{
