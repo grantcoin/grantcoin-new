@@ -163,7 +163,7 @@ string AccountFromValue(const Value& value)
     return strAccount;
 }
 
-Value getinfo(const Array& params, bool fHelp)
+Value getinfo(const Array& params, bool fHelp, int nHeight)
 {
     if (fHelp || params.size() != 0)
         throw runtime_error(
