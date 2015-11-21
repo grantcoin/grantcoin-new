@@ -185,13 +185,16 @@ Value getinfo(const Array& params, bool fHelp, int nHeight)
 	obj.push_back(Pair("newmint",		ValueFromAmount(pwalletMain->GetNewMint())));
 	obj.push_back(Pair("stake",			ValueFromAmount(pwalletMain->GetStake())));
 	obj.push_back(Pair("moneysupply",	ValueFromAmount(pindexBest->nMoneySupply)));
-#elif defined(BRAND_grantcoin)
-	// fixme: this is a temporary hack
-	if (fTestNet)
-		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreatedTestNet(nHeight)));
-	else
-		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreated(nHeight)));
-#endif	  
+//#elif defined(BRAND_grantcoin)
+// BROKEN! Adding nHeight to getinfo function causes error in codecoinrpc.cpp
+// in function `__static_initialization_and_destruction_0'
+// Attempt to add nHeight to getinfo function in codecoinrpc.h did not solve the problem.
+//	// fixme: this is a temporary hack
+//	if (fTestNet)
+//		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreatedTestNet(nHeight)));
+//	else
+//		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreated(nHeight)));
+//#endif	  
 	obj.push_back(Pair("blocks",		(int)nBestHeight));
 	obj.push_back(Pair("timeoffset",	(boost::int64_t)GetTimeOffset()));
 	obj.push_back(Pair("connections",	(int)vNodes.size()));
