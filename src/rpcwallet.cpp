@@ -208,8 +208,8 @@ Value getinfo(const Array& params, bool fHelp)
         obj.push_back(Pair("keypoololdest", (boost::int64_t)pwalletMain->GetOldestKeyPoolTime()));
 		obj.push_back(Pair("keypoolsize",	(int)pwalletMain->GetKeyPoolSize()));
     }
-	obj.push_back(Pair("paytxfee",		(boost::int64_t)MIN_TX_FEE));  // fixme: this is a temporary hack
-	obj.push_back(Pair("mininput",		(boost::int64_t)MIN_TXOUT_AMOUNT));  // fixme: this is a temporary hack
+	obj.push_back(Pair("paytxfee",		(float)MIN_TX_FEE));  // fixme: this is a temporary hack
+	obj.push_back(Pair("mininput",		(float)MIN_TXOUT_AMOUNT));  // fixme: this is a temporary hack
     if (pwalletMain && pwalletMain->IsCrypted())
         obj.push_back(Pair("unlocked_until", (boost::int64_t)nWalletUnlockTime));
 	obj.push_back(Pair("errors",		GetWarnings("statusbar")));
