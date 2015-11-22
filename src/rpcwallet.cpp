@@ -431,7 +431,7 @@ Value sendtoaddress(const Array& params, bool fHelp)
 
     // Amount
     int64_t nAmount = AmountFromValue(params[1]);
-    if (nAmount < MIN_TXOUT_AMOUNT)
+    if (nAmount < MIN_TXOUT)
         throw JSONRPCError(-101, "Send amount too small");
 
     // Wallet comments
