@@ -19,6 +19,7 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 
 static const float MIN_TX_FEE = 0.01;
 static const float MIN_TXOUT_AMOUNT = MIN_TX_FEE;
+static const int64_t MIN_TXOUT = CENT; // minimum transaction value is 0.01 GRT, which is 10000 GRT-satoshis
 
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY = 500;
