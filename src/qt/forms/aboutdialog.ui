@@ -82,7 +82,7 @@
        <item>
         <widget class="QLabel" name="versionLabel">
          <property name="text">
-          <string notr="true">v0.5.0.0</string>
+          <string notr="true">v0.7.0.0</string>
          </property>
          <property name="textFormat">
           <enum>Qt::RichText</enum>
