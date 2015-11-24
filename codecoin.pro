@@ -42,13 +42,13 @@ contains(COIN_BRAND, grantstake) {
 # Windows compilation, refer to the link below for detailed instructions
 # https://bitcointalk.org/index.php?topic=149479.0
 win32 {
-    BOOST_LIB_SUFFIX=-mgw48-mt-s-1_54
-    BOOST_INCLUDE_PATH=C:/deps/boost_1_54_0
-    BOOST_LIB_PATH=C:/deps/boost_1_54_0/stage/lib
-    BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
-    BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
-    OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1e/include
-    OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1e
+    BOOST_LIB_SUFFIX=-mgw49-mt-s-1_55
+    BOOST_INCLUDE_PATH=C:/deps/boost1.55-1.55.0+dfsg.orig
+    BOOST_LIB_PATH=C:/deps/boost1.55-1.55.0+dfsg.orig/stage/lib
+    BDB_INCLUDE_PATH=C:/deps/db5.3-5.3.28/build_unix
+    BDB_LIB_PATH=C:/deps/db5.3-5.3.28/build_unix
+    OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.2d/include
+    OPENSSL_LIB_PATH=C:/deps/openssl-1.0.2d
     MINIUPNPC_INCLUDE_PATH=C:/deps/
     MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
 }
@@ -99,11 +99,13 @@ contains(USE_QRCODE, 1) {
 #  or: qmake "USE_UPNP=0" (disabled by default)
 #  or: qmake "USE_UPNP=-" (not supported)
 # miniupnpc (http://miniupnp.free.fr/files/) must be installed for support
-macx {
-message(FIXME WARNING mac upnp support disabled for now!!!)
-} else {
-!android {
-!ios {
+macx || windows {
+message(FIXME WARNING upnp support disabled for now!!!)
+USE_UPNP=-
+}
+
+android || ios: USE_UPNP=-
+
 contains(USE_UPNP, -) {
     message(Building without UPNP support)
 } else {
@@ -115,9 +117,6 @@ contains(USE_UPNP, -) {
     INCLUDEPATH += $$MINIUPNPC_INCLUDE_PATH
     LIBS += $$join(MINIUPNPC_LIB_PATH,,-L,) -lminiupnpc
     win32:LIBS += -liphlpapi
-}
-}
-}
 }
 
 # use: qmake "USE_DBUS=1"
@@ -162,7 +161,7 @@ DEFINES += OS_MACOSX
 } else {
 DEFINES += OS_LINUX LEVELDB_ATOMIC_PRESENT BOOST_NO_CXX11_SCOPED_ENUMS
 }}
-windows:DEFINES += LEVELDB_PLATFORM_WINDOWS OS_WINDOWS
+windows:DEFINES += LEVELDB_PLATFORM_WINDOWS OS_WINDOWS BOOST_NO_SCOPED_ENUMS BOOST_NO_CXX11_SCOPED_ENUMS
 
 INCLUDEPATH += src/leveldb/include src/leveldb/helpers src/leveldb
 
@@ -387,7 +386,10 @@ SOURCES += src/leveldb/db/builder.cc src/leveldb/db/c.cc src/leveldb/db/dbformat
     src/leveldb/util/db_bloom.cc src/leveldb/util/cache.cc src/leveldb/util/coding.cc src/leveldb/util/comparator.cc \
     src/leveldb/util/crc32c.cc src/leveldb/util/env.cc src/leveldb/util/env_posix.cc src/leveldb/util/env_win.cc \
     src/leveldb/util/filter_policy.cc src/leveldb/util/db_hash.cc src/leveldb/util/histogram.cc src/leveldb/util/logging.cc \
-    src/leveldb/util/options.cc src/leveldb/util/status.cc src/leveldb/port/port_posix.cc
+    src/leveldb/util/options.cc src/leveldb/util/status.cc 
+
+unix:SOURCES += src/leveldb/port/port_posix.cc
+windows:SOURCES += src/leveldb/port/port_win.cc
 
 #leveldb libmemv
 SOURCES += src/leveldb/helpers/memenv/memenv.cc
