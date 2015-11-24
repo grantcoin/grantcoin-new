@@ -33,95 +33,6 @@ static CCriticalSection cs_nWalletUnlockTime;
 
 extern void TxToJSON(const CTransaction& tx, const uint256 hashBlock, json_spirit::Object& entry);
 
-
-// Calculate total coins created on testnet and main net.
-// This is an approximate moneysupply, not subtracting coins destroyed in transaction fees.
-// Value is stored as an integer without decimal places, so that people won't think it's the exact moneysupply.
-
-int64_t TotalCoinsCreatedTestNet(int nBestHeight)
-{
-    int64_t nTotalCoins = 0;
-    if (nBestHeight == 1)
-        nTotalCoins = 10000000000;
-    else if (nBestHeight < 500)
-        nTotalCoins = 10000000000 + ((nBestHeight - 1) * 0.01);
-    else if (nBestHeight < 510)
-        nTotalCoins = 10000000004.98 + ((nBestHeight - 499) * 6.25);
-    else if (nBestHeight < 520)
-        nTotalCoins = 10000000067.48 + ((nBestHeight - 509) * 12.5);
-    else if (nBestHeight < 530)
-        nTotalCoins = 10000000192.48 + ((nBestHeight - 519) * 25);
-    else if (nBestHeight < 540)
-        nTotalCoins = 10000000442.48 + ((nBestHeight - 529) * 50);
-    else if (nBestHeight < 550)
-        nTotalCoins = 10000000942.48 + ((nBestHeight - 539) * 100);
-    else if (nBestHeight < 560)
-        nTotalCoins = 10000001942.48 + ((nBestHeight - 549) * 200);
-    else if (nBestHeight < 1000)
-        nTotalCoins = 10000003942.48 + ((nBestHeight - 559) * 400);
-    else if (nBestHeight < 1500)
-        nTotalCoins = 10000179942.48 + ((nBestHeight - 999) * 200);
-    else if (nBestHeight < 2000)
-        nTotalCoins = 10000279942.48 + ((nBestHeight - 1499) * 100);
-    else if (nBestHeight < 2500)
-        nTotalCoins = 10000329942.48 + ((nBestHeight - 1999) * 50);
-    else if (nBestHeight < 3000)
-        nTotalCoins = 10000354942.48 + ((nBestHeight - 2499) * 25);
-    else if (nBestHeight < 3500)
-        nTotalCoins = 10000367442.48 + ((nBestHeight - 2999) * 12.5);
-    else if (nBestHeight < 4000)
-        nTotalCoins = 10000373692.48 + ((nBestHeight - 3499) * 6.25);
-    else if (nBestHeight < 4500)
-        nTotalCoins = 10000376817.48 + ((nBestHeight - 3999) * 3.13);
-    else if (nBestHeight < 5000)
-        nTotalCoins = 10000378382.48 + ((nBestHeight - 4499) * 1.57);
-    else if (nBestHeight >= 5000)
-        nTotalCoins = 10000379167.48 + ((nBestHeight - 4999) * 1);
-
-    return nTotalCoins;
-}
-
-int64_t TotalCoinsCreated(int nBestHeight)
-{
-    int64_t nTotalCoins = 0;
-/* kludge */
-    if (fTestNet){
-	return TotalCoinsCreatedTestNet(nBestHeight);
-    }
-
-    if (nBestHeight == 1)
-        nTotalCoins = 10000000000;
-    else if (nBestHeight < 50000)
-        nTotalCoins = 10000000000 + ((nBestHeight - 1) * 0.01);
-    else if (nBestHeight < 51000)
-        nTotalCoins = 10000000499.98 + ((nBestHeight - 49999) * 6.25);
-    else if (nBestHeight < 52000)
-        nTotalCoins = 10000006749.98 + ((nBestHeight - 50999) * 12.5);
-    else if (nBestHeight < 53000)
-        nTotalCoins = 10000019249.98 + ((nBestHeight - 51999) * 25);
-    else if (nBestHeight < 54000)
-        nTotalCoins = 10000044249.98 + ((nBestHeight - 52999) * 50);
-    else if (nBestHeight < 55000)
-        nTotalCoins = 10000094249.98 + ((nBestHeight - 53999) * 100);
-    else if (nBestHeight < 56000)
-        nTotalCoins = 10000194249.98 + ((nBestHeight - 54999) * 200);
-    else if (nBestHeight < 100000)
-        nTotalCoins = 10000394249.98 + ((nBestHeight - 55999) * 400);
-    else if (nBestHeight < 150000)
-        nTotalCoins = 10017994249.98 + ((nBestHeight - 99999) * 200);
-    else if (nBestHeight < 200000)
-        nTotalCoins = 10027994249.98 + ((nBestHeight - 149999) * 100);
-    else if (nBestHeight < 250000)
-        nTotalCoins = 10032994249.98 + ((nBestHeight - 199999) * 50);
-    else if (nBestHeight < 300000)
-        nTotalCoins = 10035494249.98 + ((nBestHeight - 249999) * 25);
-    else if (nBestHeight >= 300000)
-        nTotalCoins = 10036744249.98 + ((nBestHeight - 299999) * 10);
-
-    return nTotalCoins;
-}
-
-
 std::string HelpRequiringPassphrase()
 {
     return pwalletMain && pwalletMain->IsCrypted()
@@ -185,14 +96,8 @@ Value getinfo(const Array& params, bool fHelp)
 #if defined(PPCOINSTAKE)
 	obj.push_back(Pair("newmint",		ValueFromAmount(pwalletMain->GetNewMint())));
 	obj.push_back(Pair("stake",			ValueFromAmount(pwalletMain->GetStake())));
-	obj.push_back(Pair("moneysupply",	ValueFromAmount(pindexBest->nMoneySupply)));
-#elif defined(BRAND_grantcoin)
-	// fixme: this is a temporary hack
-	if (fTestNet)
-		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreatedTestNet(nBestHeight)));
-	else
-		obj.push_back(Pair("moneysupply",	(boost::int64_t)TotalCoinsCreated(nBestHeight)));
 #endif	  
+	obj.push_back(Pair("moneysupply",	ValueFromAmount(pindexBest->nMoneySupply)));
 	obj.push_back(Pair("blocks",		(int)nBestHeight));
 	obj.push_back(Pair("timeoffset",	(boost::int64_t)GetTimeOffset()));
 	obj.push_back(Pair("connections",	(int)vNodes.size()));

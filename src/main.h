@@ -1844,6 +1844,7 @@ public:
 	COutPoint prevoutStake;
 	unsigned int nStakeTime;
 	uint256 hashProofOfStake;
+	int64_t nMoneySupply;
 #endif
 	// block header
 	int nVersion;
@@ -1872,6 +1873,7 @@ public:
 		hashProofOfStake = 0;
 		prevoutStake.SetNull();
 		nStakeTime = 0;
+		nMoneySupply = 0;
 #endif
 		nTx = 0;
 		nChainTx = 0;
@@ -1896,7 +1898,6 @@ public:
 		nChainTrust = 0;
 #if defined(PPCOINSTAKE)
 		nMint = 0;
-		nMoneySupply = 0;
 		nFlags = 0;
 		nStakeModifier = 0;
 		nStakeModifierChecksum = 0;
@@ -1912,11 +1913,11 @@ public:
 			prevoutStake.SetNull();
 			nStakeTime = 0;
 		}
-#else
+#endif
+		nMoneySupply = 0;
 		nTx = 0;
 		nChainTx = 0;
 		nStatus = 0;
-#endif
 
 		nVersion	   = block.nVersion;
 		hashMerkleRoot = block.hashMerkleRoot;
@@ -2140,7 +2141,6 @@ struct CBlockIndexWorkComparator
 };
 
 
-
 /** Used to marshal pointers into hashes for db storage. */
 class CDiskBlockIndex : public CBlockIndex
 {
@@ -2172,7 +2172,6 @@ public:
 
 #if defined(PPCOINSTAKE) // TODO: is needed for grantcoin?
 		READWRITE(nMint);
-		READWRITE(nMoneySupply);
 		READWRITE(nFlags);
 		READWRITE(nStakeModifier);
 		if (IsProofOfStake())
@@ -2188,6 +2187,7 @@ public:
 			const_cast<CDiskBlockIndex*>(this)->hashProofOfStake = 0;
 		}
 #endif
+		READWRITE(nMoneySupply);
 
 		// block header
 		READWRITE(this->nVersion);
