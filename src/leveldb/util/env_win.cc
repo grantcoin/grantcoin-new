@@ -908,15 +908,18 @@ uint64_t Win32Env::NowMicros()
 
 static Status CreateDirInner( const std::string& dirname )
 {
+    std::string dir_path = dirname;
+    std::wstring wdir_path;
+	ToWidePath(ModifyPath(dir_path), wdir_path);
     Status sRet;
-    DWORD attr = ::GetFileAttributes(dirname.c_str());
+    DWORD attr = ::GetFileAttributesW(wdir_path.c_str());
     if (attr == INVALID_FILE_ATTRIBUTES) { // doesn't exist:
       std::size_t slash = dirname.find_last_of("\\");
       if (slash != std::string::npos){
 	sRet = CreateDirInner(dirname.substr(0, slash));
 	if (!sRet.ok()) return sRet;
       }
-      BOOL result = ::CreateDirectory(dirname.c_str(), NULL);
+      BOOL result = ::CreateDirectoryW(wdir_path.c_str(), NULL);
       if (result == FALSE) {
 	sRet = Status::IOError(dirname, "Could not create directory.");
 	return sRet;
