@@ -1828,7 +1828,6 @@ public:
 
 #if defined(PPCOINSTAKE)
 	int64_t nMint;
-	int64_t nMoneySupply;
 
 	// ppcoin: proof-of-stake related block index fields
 	unsigned int nFlags;  // ppcoin: block index flags
@@ -1844,8 +1843,9 @@ public:
 	COutPoint prevoutStake;
 	unsigned int nStakeTime;
 	uint256 hashProofOfStake;
-	int64_t nMoneySupply;
 #endif
+	int64_t nMoneySupply;
+
 	// block header
 	int nVersion;
 	uint256 hashMerkleRoot;
@@ -1866,15 +1866,14 @@ public:
 		nChainTrust = 0;
 #if defined(PPCOINSTAKE)
 		nMint = 0;
-		nMoneySupply = 0;
 		nFlags = 0;
 		nStakeModifier = 0;
 		nStakeModifierChecksum = 0;
 		hashProofOfStake = 0;
 		prevoutStake.SetNull();
 		nStakeTime = 0;
-		nMoneySupply = 0;
 #endif
+		nMoneySupply = 0;
 		nTx = 0;
 		nChainTx = 0;
 		nStatus = 0;
