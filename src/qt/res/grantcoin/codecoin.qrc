@@ -50,6 +50,6 @@
         <file alias="update_spinner">../movies/update_spinner.mng</file>
     </qresource>
     <qresource prefix="/translations">
-        <file alias="en">../../locale/codecoin_en.qm</file>
+        <file alias="en">../../locale/codecoin_en.ts</file>
     </qresource>
 </RCC>
