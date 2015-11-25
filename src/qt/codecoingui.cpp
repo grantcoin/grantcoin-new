@@ -344,7 +344,8 @@ void CodecoinGUI::createMenuBar()
 
     QMenu *settings = appMenuBar->addMenu(tr("&Settings"));
     settings->addAction(encryptWalletAction);
-    settings->addAction(unlockForMintingAction);
+// Remove "Unlock Wallet for Minting Only" option from Settings menu until Proof of Stake is implemented
+//    settings->addAction(unlockForMintingAction);
     settings->addAction(changePassphraseAction);
     settings->addSeparator();
     settings->addAction(optionsAction);
