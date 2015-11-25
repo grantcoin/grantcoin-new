@@ -47,7 +47,8 @@ contains(COIN_BRAND, grantstake) {
 # Windows compilation, refer to the link below for detailed instructions
 # https://bitcointalk.org/index.php?topic=149479.0
 win32 {
-    BOOST_LIB_SUFFIX=-mgw49-mt-s-1_55
+    BOOST_LIB_SUFFIX=-mt
+    BOOST_THREAD_LIB_SUFFIX=_win32-mt
     BOOST_INCLUDE_PATH=C:/deps/boost1.55-1.55.0+dfsg.orig
     BOOST_LIB_PATH=C:/deps/boost1.55-1.55.0+dfsg.orig/stage/lib
     BDB_INCLUDE_PATH=C:/deps/db5.3-5.3.28/build_unix
@@ -457,8 +458,10 @@ CODECFORTR = UTF-8
 TRANSLATIONS = $$files(src/qt/locale/codecoin_*.ts)
 
 isEmpty(QMAKE_LRELEASE) {
-    win32:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]\\lrelease.exe
-    else:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]/lrelease
+    #if you want to do a native windows build, uncomment 2 lines below, comment 3rd
+    #win32:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]\\lrelease.exe
+    #else:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]/lrelease
+    QMAKE_LRELEASE = $$[QT_INSTALL_BINS]/lrelease
 }
 isEmpty(QM_DIR):QM_DIR = $$PWD/src/qt/locale
 # automatically build translations, so they can be included in resource file
@@ -556,6 +559,9 @@ win32:LIBS += -lws2_32 -lshlwapi -lmswsock -lole32 -loleaut32 -luuid -lgdi32
 LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX
 win32:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX
 macx:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX
+
+# for mingw cross-compile build:
+win32:LIBS += -lpthread
 
 contains(RELEASE, 1) {
     !win32:!macx {
