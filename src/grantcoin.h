@@ -1,6 +1,7 @@
 // Copyright (c) 2014 Troy Benjegerdes, under AGPLv3
 // Distributed under the Affero GNU General public license version 3
 // file COPYING or http://www.gnu.org/licenses/agpl-3.0.html
+// Copyright (c) 2015 The Grantcoin Foundation
 #ifndef CODECOIN_grantcoin_H
 #define CODECOIN_grantcoin_H
 
