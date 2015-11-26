@@ -322,7 +322,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
 </context>
 <context>
-    <name>GrantcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>

@@ -304,7 +304,7 @@ Apakah Anda yakin ingin mengenkripsi dompet Anda?</translation>
     </message>
 </context>
 <context>
-    <name>GrantcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="191"/>
         <source>&amp;Overview</source>
