@@ -17,7 +17,7 @@
 const std::string CLIENT_NAME(BRAND_upper);
 
 // Client version number
-#define CLIENT_VERSION_SUFFIX   "-catoshi-beta"
+#define CLIENT_VERSION_SUFFIX   "-beta"
 
 
 // The following part of the code determines the CLIENT_BUILD variable.
