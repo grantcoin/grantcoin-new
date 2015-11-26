@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Catcoin</source>
-        <translation>Catcoinist</translation>
+        <source>About Grantcoin</source>
+        <translation>Grantcoinist</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Catcoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Catcoini&lt;/b&gt; versioon</translation>
+        <source>&lt;b&gt;Grantcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Grantcoini&lt;/b&gt; versioon</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,7 +34,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+0"/>
-        <source>The Litecoin developers</source>
+        <source>The Grantcoin developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -67,8 +67,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Catcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Maksete saamiseks kasutatavad Catcoini aadressid. Maksjate paremaks jälgimiseks võib igaühele anda erineva.</translation>
+        <source>These are your Grantcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Maksete saamiseks kasutatavad Grantcoini aadressid. Maksjate paremaks jälgimiseks võib igaühele anda erineva.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,7 +82,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Catcoin address</source>
+        <source>Sign a message to prove you own a Grantcoin address</source>
         <translation>Allkirjasta sõnum, et tõestada Bitconi aadressi olemasolu.</translation>
     </message>
     <message>
@@ -107,8 +107,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Catcoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Catcoini aadressiga.</translation>
+        <source>Verify a message to ensure it was signed with a specified Grantcoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Grantcoini aadressiga.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Catcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Catcoini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
+        <source>These are your Grantcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Grantcoini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -248,8 +248,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Hoiatus: Kui sa kaotad oma, rahakoti krüpteerimisel kasutatud, salafraasi, siis &lt;b&gt;KAOTAD KA KÕIK OMA LITECOINID&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GRANTCOINS&lt;/b&gt;!</source>
+        <translation>Hoiatus: Kui sa kaotad oma, rahakoti krüpteerimisel kasutatud, salafraasi, siis &lt;b&gt;KAOTAD KA KÕIK OMA GRANTCOINID&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -275,8 +275,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-56"/>
-        <source>Catcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your catcoins from being stolen by malware infecting your computer.</source>
-        <translation>Catcoin sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista catcoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
+        <source>Grantcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your grantcoins from being stolen by malware infecting your computer.</source>
+        <translation>Grantcoin sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista grantcoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -321,7 +321,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>GrantcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
@@ -374,8 +374,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Catcoin</source>
-        <translation>Kuva info Catcoini kohta</translation>
+        <source>Show information about Grantcoin</source>
+        <translation>Kuva info Grantcoini kohta</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Catcoin address</source>
-        <translation>Saada münte Catcoini aadressile</translation>
+        <source>Send coins to a Grantcoin address</source>
+        <translation>Saada münte Grantcoini aadressile</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Catcoin</source>
-        <translation>Muuda Catcoini seadeid</translation>
+        <source>Modify configuration options for Grantcoin</source>
+        <translation>Muuda Grantcoini seadeid</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Catcoin</source>
-        <translation>Catcoin</translation>
+        <source>Grantcoin</source>
+        <translation>Grantcoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Catcoin</source>
-        <translation>%Catcoinist</translation>
+        <source>&amp;About Grantcoin</source>
+        <translation>%Grantcoinist</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Catcoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Catcoini aadressiga</translation>
+        <source>Sign messages with your Grantcoin addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Grantcoini aadressiga</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Catcoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Catcoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified Grantcoin addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Grantcoini aadressiga</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+47"/>
-        <source>Catcoin client</source>
-        <translation>Catcoini klient</translation>
+        <source>Grantcoin client</source>
+        <translation>Grantcoini klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Catcoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Catcoini võrku</numerusform><numerusform>%n aktiivset ühendust Catcoini võrku</numerusform></translation>
+        <source>%n active connection(s) to Grantcoin network</source>
+        <translation><numerusform>%n aktiivne ühendus Grantcoini võrku</numerusform><numerusform>%n aktiivset ühendust Grantcoini võrku</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -655,8 +655,8 @@ Aadress: %4⏎</translation>
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Catcoin address or malformed URI parameters.</source>
-        <translation>URI ei suudeta parsida. Põhjuseks võib olla kehtetu Catcoini aadress või vigased URI parameetrid.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Grantcoin address or malformed URI parameters.</source>
+        <translation>URI ei suudeta parsida. Põhjuseks võib olla kehtetu Grantcoini aadress või vigased URI parameetrid.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -670,8 +670,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Catcoin can no longer continue safely and will quit.</source>
-        <translation>Ilmnes kriitiline tõrge. Catcoin suletakse turvakaalutluste tõttu.</translation>
+        <source>A fatal error occurred. Grantcoin can no longer continue safely and will quit.</source>
+        <translation>Ilmnes kriitiline tõrge. Grantcoin suletakse turvakaalutluste tõttu.</translation>
     </message>
 </context>
 <context>
@@ -736,8 +736,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Catcoin address.</source>
-        <translation>Sisestatud aadress &quot;%1&quot; ei ole Catcoinis kehtiv.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Grantcoin address.</source>
+        <translation>Sisestatud aadress &quot;%1&quot; ei ole Grantcoinis kehtiv.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -755,8 +755,8 @@ Aadress: %4⏎</translation>
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Catcoin-Qt</source>
-        <translation>Catcoini-Qt</translation>
+        <source>Grantcoin-Qt</source>
+        <translation>Grantcoini-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -818,13 +818,13 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Catcoin after logging in to the system.</source>
-        <translation>Käivita Catcoin süsteemi logimisel.</translation>
+        <source>Automatically start Grantcoin after logging in to the system.</source>
+        <translation>Käivita Grantcoin süsteemi logimisel.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Catcoin on system login</source>
-        <translation>&amp;Start Catcoin sisselogimisel</translation>
+        <source>&amp;Start Grantcoin on system login</source>
+        <translation>&amp;Start Grantcoin sisselogimisel</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -843,8 +843,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Catcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Catcoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the Grantcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Grantcoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -853,8 +853,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Catcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Kasuta Catcoini võrgustikku ühendumiseks SOCKS turva proxy&apos;t (nt Tor&apos;i kasutamisel).</translation>
+        <source>Connect to the Grantcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Kasuta Grantcoini võrgustikku ühendumiseks SOCKS turva proxy&apos;t (nt Tor&apos;i kasutamisel).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -928,8 +928,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Catcoin.</source>
-        <translation>Kasutajaliidese keele valimise koht. Valik rakendub Catcoini käivitamisel.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Grantcoin.</source>
+        <translation>Kasutajaliidese keele valimise koht. Valik rakendub Grantcoini käivitamisel.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -943,8 +943,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Catcoin addresses in the transaction list or not.</source>
-        <translation>Kuvada Catcoini aadress tehingute loetelus või mitte.</translation>
+        <source>Whether to show Grantcoin addresses in the transaction list or not.</source>
+        <translation>Kuvada Grantcoini aadress tehingute loetelus või mitte.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -995,8 +995,8 @@ Aadress: %4⏎</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Catcoin.</source>
-        <translation>Tehtud valik rakendub Catcoini käivitamisel.</translation>
+        <source>This setting will take effect after restarting Grantcoin.</source>
+        <translation>Tehtud valik rakendub Grantcoini käivitamisel.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1014,7 +1014,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Catcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Grantcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1068,8 +1068,8 @@ Aadress: %4⏎</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start catcoin: click-to-pay handler</source>
-        <translation>Catcoin ei käivitu: vajuta-maksa toiming</translation>
+        <source>Cannot start grantcoin: click-to-pay handler</source>
+        <translation>Grantcoin ei käivitu: vajuta-maksa toiming</translation>
     </message>
 </context>
 <context>
@@ -1218,8 +1218,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Catcoin-Qt help message to get a list with possible Catcoin command-line options.</source>
-        <translation>Näita kehtivate käsurea valikute kuvamiseks Catcoini-Qt abiteksti</translation>
+        <source>Show the Grantcoin-Qt help message to get a list with possible Grantcoin command-line options.</source>
+        <translation>Näita kehtivate käsurea valikute kuvamiseks Grantcoini-Qt abiteksti</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1238,13 +1238,13 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Catcoin - Debug window</source>
-        <translation>Catcoin - debugimise aken</translation>
+        <source>Grantcoin - Debug window</source>
+        <translation>Grantcoin - debugimise aken</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Catcoin Core</source>
-        <translation>Catcoini tuumik</translation>
+        <source>Grantcoin Core</source>
+        <translation>Grantcoini tuumik</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1253,8 +1253,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Catcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ava Catcoini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
+        <source>Open the Grantcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ava Grantcoini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1263,8 +1263,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Catcoin RPC console.</source>
-        <translation>Teretulemast Catcoini RPC konsooli.</translation>
+        <source>Welcome to the Grantcoin RPC console.</source>
+        <translation>Teretulemast Grantcoini RPC konsooli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1406,8 +1406,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Tehingu saaja aadress (nt: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to send the payment to (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Tehingu saaja aadress (nt: Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1447,8 +1447,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Catcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Sisesta Catcoini aadress (nt: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Grantcoin address (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Sisesta Grantcoini aadress (nt: Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1470,8 +1470,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Sõnumi signeerimise aadress (nt: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to sign the message with (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Sõnumi signeerimise aadress (nt: Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1512,8 +1512,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Catcoin address</source>
-        <translation>Allkirjasta sõnum Catcoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this Grantcoin address</source>
+        <translation>Allkirjasta sõnum Grantcoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1543,13 +1543,13 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Aadress, millega sõnum allkirjastati (nt: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address the message was signed with (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Aadress, millega sõnum allkirjastati (nt: Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Catcoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Catcoini aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified Grantcoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Grantcoini aadressiga.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1564,8 +1564,8 @@ Aadress: %4⏎</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Catcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Sisesta Catcoini aadress (nt: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Grantcoin address (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Sisesta Grantcoini aadress (nt: Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1574,8 +1574,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Catcoin signature</source>
-        <translation>Sisesta Catcoini allkiri</translation>
+        <source>Enter Grantcoin signature</source>
+        <translation>Sisesta Grantcoini allkiri</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1648,7 +1648,7 @@ Aadress: %4⏎</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Litecoin developers</source>
+        <source>The Grantcoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2186,8 +2186,8 @@ Aadress: %4⏎</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Catcoin version</source>
-        <translation>Catcoini versioon</translation>
+        <source>Grantcoin version</source>
+        <translation>Grantcoini versioon</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2196,8 +2196,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or catcoind</source>
-        <translation>Saada käsklus -serverile või catcoindile</translation>
+        <source>Send command to -server or grantcoind</source>
+        <translation>Saada käsklus -serverile või grantcoindile</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2216,13 +2216,13 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: catcoin.conf)</source>
-        <translation>Täpsusta sätete fail (vaikimisi: catcoin.conf)</translation>
+        <source>Specify configuration file (default: grantcoin.conf)</source>
+        <translation>Täpsusta sätete fail (vaikimisi: grantcoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: catcoind.pid)</source>
-        <translation>Täpsusta PID fail (vaikimisi: catcoin.pid)</translation>
+        <source>Specify pid file (default: grantcoind.pid)</source>
+        <translation>Täpsusta PID fail (vaikimisi: grantcoin.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2299,24 +2299,24 @@ Aadress: %4⏎</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=catcoinrpc
+rpcuser=grantcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Catcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Grantcoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, sul tuleb rpcpassword määrata seadete failis:
 %s
 Soovitatav on kasutada järgmist juhuslikku parooli:
-rpcuser=catcoinrpc
+rpcuser=grantcoinrpc
 rpcpassword=%s
 (seda parooli ei pea meeles pidama)
 Kasutajanimi ning parool EI TOHI kattuda.
 Kui faili ei leita, loo see ainult-omaniku-loetavas failiõigustes .
 Soovitatav on seadistada tõrgete puhul teavitus;
-nt: alertnotify=echo %%s | email -s &quot;Catcoin Alert&quot; admin@foo.com
+nt: alertnotify=echo %%s | email -s &quot;Grantcoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2331,8 +2331,8 @@ nt: alertnotify=echo %%s | email -s &quot;Catcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Catcoin is probably already running.</source>
-        <translation>Ei suuda määrata ainuõigust andmekaustale %s. Tõenäolisel on Catcoin juba avatud.</translation>
+        <source>Cannot obtain a lock on data directory %s. Grantcoin is probably already running.</source>
+        <translation>Ei suuda määrata ainuõigust andmekaustale %s. Tõenäolisel on Grantcoin juba avatud.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2376,8 +2376,8 @@ nt: alertnotify=echo %%s | email -s &quot;Catcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Catcoin will not work properly.</source>
-        <translation>Hoiatus: Palun kontrolli oma arvuti kuupäeva/kellaaega! Kui arvuti kell on vale, siis Catcoin ei tööta korralikult</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Grantcoin will not work properly.</source>
+        <translation>Hoiatus: Palun kontrolli oma arvuti kuupäeva/kellaaega! Kui arvuti kell on vale, siis Grantcoin ei tööta korralikult</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2626,8 +2626,8 @@ nt: alertnotify=echo %%s | email -s &quot;Catcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Catcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL valikud: (vaata Catcoini Wikist või SSL sätete juhendist)</translation>
+        <source>SSL options: (see the Grantcoin Wiki for SSL setup instructions)</source>
+        <translation>SSL valikud: (vaata Grantcoini Wikist või SSL sätete juhendist)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2816,13 +2816,13 @@ nt: alertnotify=echo %%s | email -s &quot;Catcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Catcoin</source>
-        <translation>Viga wallet.dat käivitamisel: Rahakott nõuab Catcoini uusimat versiooni</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Grantcoin</source>
+        <translation>Viga wallet.dat käivitamisel: Rahakott nõuab Grantcoini uusimat versiooni</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Catcoin to complete</source>
-        <translation>Rahakott tuli ümberkirjutada: toimingu lõpetamiseks taaskäivita Catcoin</translation>
+        <source>Wallet needed to be rewritten: restart Grantcoin to complete</source>
+        <translation>Rahakott tuli ümberkirjutada: toimingu lõpetamiseks taaskäivita Grantcoin</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2881,8 +2881,8 @@ nt: alertnotify=echo %%s | email -s &quot;Catcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Catcoin is probably already running.</source>
-        <translation>%s&apos;ga ei ole võimalik sellest arvutist siduda. Catcoin juba töötab.</translation>
+        <source>Unable to bind to %s on this computer. Grantcoin is probably already running.</source>
+        <translation>%s&apos;ga ei ole võimalik sellest arvutist siduda. Grantcoin juba töötab.</translation>
     </message>
     <message>
         <location line="+64"/>

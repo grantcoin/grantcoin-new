@@ -6,13 +6,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Catcoin</source>
-        <translation>About Catcoin</translation>
+        <source>About Grantcoin</source>
+        <translation>About Grantcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Catcoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Catcoin&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;Grantcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Grantcoin&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -36,8 +36,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Litecoin developers</source>
-        <translation>The Litecoin developers</translation>
+        <source>The Grantcoin developers</source>
+        <translation>The Grantcoin developers</translation>
     </message>
 </context>
 <context>
@@ -69,8 +69,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Catcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>These are your Catcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
+        <source>These are your Grantcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>These are your Grantcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -84,8 +84,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Catcoin address</source>
-        <translation>Sign a message to prove you own a Catcoin address</translation>
+        <source>Sign a message to prove you own a Grantcoin address</source>
+        <translation>Sign a message to prove you own a Grantcoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -109,8 +109,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Catcoin address</source>
-        <translation>Verify a message to ensure it was signed with a specified Catcoin address</translation>
+        <source>Verify a message to ensure it was signed with a specified Grantcoin address</source>
+        <translation>Verify a message to ensure it was signed with a specified Grantcoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -124,8 +124,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Catcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Catcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your Grantcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your Grantcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -250,8 +250,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GRANTCOINS&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GRANTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -277,8 +277,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Catcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your catcoins from being stolen by malware infecting your computer.</source>
-        <translation>Catcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your catcoins from being stolen by malware infecting your computer.</translation>
+        <source>Grantcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your grantcoins from being stolen by malware infecting your computer.</source>
+        <translation>Grantcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your grantcoins from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -323,7 +323,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>GrantcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
@@ -376,8 +376,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Catcoin</source>
-        <translation>Show information about Catcoin</translation>
+        <source>Show information about Grantcoin</source>
+        <translation>Show information about Grantcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -421,13 +421,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Catcoin address</source>
-        <translation>Send coins to a Catcoin address</translation>
+        <source>Send coins to a Grantcoin address</source>
+        <translation>Send coins to a Grantcoin address</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Catcoin</source>
-        <translation>Modify configuration options for Catcoin</translation>
+        <source>Modify configuration options for Grantcoin</source>
+        <translation>Modify configuration options for Grantcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -457,8 +457,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Catcoin</source>
-        <translation>Catcoin</translation>
+        <source>Grantcoin</source>
+        <translation>Grantcoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -482,8 +482,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Catcoin</source>
-        <translation>&amp;About Catcoin</translation>
+        <source>&amp;About Grantcoin</source>
+        <translation>&amp;About Grantcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -502,13 +502,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Catcoin addresses to prove you own them</source>
-        <translation>Sign messages with your Catcoin addresses to prove you own them</translation>
+        <source>Sign messages with your Grantcoin addresses to prove you own them</source>
+        <translation>Sign messages with your Grantcoin addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Catcoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Catcoin addresses</translation>
+        <source>Verify messages to ensure they were signed with specified Grantcoin addresses</source>
+        <translation>Verify messages to ensure they were signed with specified Grantcoin addresses</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -538,15 +538,15 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Catcoin client</source>
-        <translation>Catcoin client</translation>
+        <source>Grantcoin client</source>
+        <translation>Grantcoin client</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Catcoin network</source>
+        <source>%n active connection(s) to Grantcoin network</source>
         <translation>
-            <numerusform>%n active connection to Catcoin network</numerusform>
-            <numerusform>%n active connections to Catcoin network</numerusform>
+            <numerusform>%n active connection to Grantcoin network</numerusform>
+            <numerusform>%n active connections to Grantcoin network</numerusform>
         </translation>
     </message>
     <message>
@@ -670,8 +670,8 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Catcoin address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid Catcoin address or malformed URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Grantcoin address or malformed URI parameters.</source>
+        <translation>URI can not be parsed! This can be caused by an invalid Grantcoin address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -685,8 +685,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Catcoin can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. Catcoin can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. Grantcoin can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. Grantcoin can no longer continue safely and will quit.</translation>
     </message>
 </context>
 <context>
@@ -751,8 +751,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Catcoin address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid Catcoin address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Grantcoin address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid Grantcoin address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -770,8 +770,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Catcoin-Qt</source>
-        <translation>Catcoin-Qt</translation>
+        <source>Grantcoin-Qt</source>
+        <translation>Grantcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -833,13 +833,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Catcoin after logging in to the system.</source>
-        <translation>Automatically start Catcoin after logging in to the system.</translation>
+        <source>Automatically start Grantcoin after logging in to the system.</source>
+        <translation>Automatically start Grantcoin after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Catcoin on system login</source>
-        <translation>&amp;Start Catcoin on system login</translation>
+        <source>&amp;Start Grantcoin on system login</source>
+        <translation>&amp;Start Grantcoin on system login</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -858,8 +858,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Catcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Catcoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Grantcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Grantcoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -868,8 +868,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Catcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connect to the Catcoin network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+        <source>Connect to the Grantcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the Grantcoin network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -943,8 +943,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Catcoin.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Catcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Grantcoin.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting Grantcoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -958,8 +958,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Catcoin addresses in the transaction list or not.</source>
-        <translation>Whether to show Catcoin addresses in the transaction list or not.</translation>
+        <source>Whether to show Grantcoin addresses in the transaction list or not.</source>
+        <translation>Whether to show Grantcoin addresses in the transaction list or not.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1010,8 +1010,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Catcoin.</source>
-        <translation>This setting will take effect after restarting Catcoin.</translation>
+        <source>This setting will take effect after restarting Grantcoin.</source>
+        <translation>This setting will take effect after restarting Grantcoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1029,8 +1029,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Catcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Catcoin network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Grantcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Grantcoin network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1083,8 +1083,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start catcoin: click-to-pay handler</source>
-        <translation>Cannot start catcoin: click-to-pay handler</translation>
+        <source>Cannot start grantcoin: click-to-pay handler</source>
+        <translation>Cannot start grantcoin: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1233,8 +1233,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Catcoin-Qt help message to get a list with possible Catcoin command-line options.</source>
-        <translation>Show the Catcoin-Qt help message to get a list with possible Catcoin command-line options.</translation>
+        <source>Show the Grantcoin-Qt help message to get a list with possible Grantcoin command-line options.</source>
+        <translation>Show the Grantcoin-Qt help message to get a list with possible Grantcoin command-line options.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1253,13 +1253,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Catcoin - Debug window</source>
-        <translation>Catcoin - Debug window</translation>
+        <source>Grantcoin - Debug window</source>
+        <translation>Grantcoin - Debug window</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Catcoin Core</source>
-        <translation>Catcoin Core</translation>
+        <source>Grantcoin Core</source>
+        <translation>Grantcoin Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1268,8 +1268,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Catcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Catcoin debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the Grantcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the Grantcoin debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1278,8 +1278,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Catcoin RPC console.</source>
-        <translation>Welcome to the Catcoin RPC console.</translation>
+        <source>Welcome to the Grantcoin RPC console.</source>
+        <translation>Welcome to the Grantcoin RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1421,8 +1421,8 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to send the payment to (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>The address to send the payment to (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1462,8 +1462,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Catcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Enter a Catcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Grantcoin address (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Enter a Grantcoin address (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1485,8 +1485,8 @@ Address: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to sign the message with (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>The address to sign the message with (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1527,8 +1527,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Catcoin address</source>
-        <translation>Sign the message to prove you own this Catcoin address</translation>
+        <source>Sign the message to prove you own this Grantcoin address</source>
+        <translation>Sign the message to prove you own this Grantcoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1558,13 +1558,13 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address the message was signed with (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>The address the message was signed with (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Catcoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified Catcoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified Grantcoin address</source>
+        <translation>Verify the message to ensure it was signed with the specified Grantcoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1579,8 +1579,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Catcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Enter a Catcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Grantcoin address (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Enter a Grantcoin address (e.g. Ger4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1589,8 +1589,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Catcoin signature</source>
-        <translation>Enter Catcoin signature</translation>
+        <source>Enter Grantcoin signature</source>
+        <translation>Enter Grantcoin signature</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1663,8 +1663,8 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Litecoin developers</source>
-        <translation>The Litecoin developers</translation>
+        <source>The Grantcoin developers</source>
+        <translation>The Grantcoin developers</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2216,8 +2216,8 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Catcoin version</source>
-        <translation>Catcoin version</translation>
+        <source>Grantcoin version</source>
+        <translation>Grantcoin version</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2226,8 +2226,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or catcoind</source>
-        <translation>Send command to -server or catcoind</translation>
+        <source>Send command to -server or grantcoind</source>
+        <translation>Send command to -server or grantcoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2246,13 +2246,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: catcoin.conf)</source>
-        <translation>Specify configuration file (default: catcoin.conf)</translation>
+        <source>Specify configuration file (default: grantcoin.conf)</source>
+        <translation>Specify configuration file (default: grantcoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: catcoind.pid)</source>
-        <translation>Specify pid file (default: catcoind.pid)</translation>
+        <source>Specify pid file (default: grantcoind.pid)</source>
+        <translation>Specify pid file (default: grantcoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2329,24 +2329,24 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=catcoinrpc
+rpcuser=grantcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Catcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Grantcoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=catcoinrpc
+rpcuser=grantcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Catcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Grantcoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2361,8 +2361,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Catcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Catcoin is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Catcoin is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. Grantcoin is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Grantcoin is probably already running.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2406,8 +2406,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Catcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Catcoin will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Catcoin will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Grantcoin will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Grantcoin will not work properly.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2656,8 +2656,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Catcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Catcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL options: (see the Catcoin Wiki for SSL setup instructions)</translation>
+        <source>SSL options: (see the Grantcoin Wiki for SSL setup instructions)</source>
+        <translation>SSL options: (see the Grantcoin Wiki for SSL setup instructions)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2846,13 +2846,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Catcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Catcoin</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Catcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Grantcoin</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Grantcoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Catcoin to complete</source>
-        <translation>Wallet needed to be rewritten: restart Catcoin to complete</translation>
+        <source>Wallet needed to be rewritten: restart Grantcoin to complete</source>
+        <translation>Wallet needed to be rewritten: restart Grantcoin to complete</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2911,8 +2911,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Catcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Catcoin is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Catcoin is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Grantcoin is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Grantcoin is probably already running.</translation>
     </message>
     <message>
         <location line="+64"/>

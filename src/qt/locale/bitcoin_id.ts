@@ -26,14 +26,14 @@
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="133"/>
-        <source>Copyright © 2009-2014 Bitcoin Developers
+        <source>Copyright © 2009-2014 Grantcoin Developers
 
 This is experimental software.
 
 Distributed under the MIT/X11 software license, see the accompanying file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>Copyright © 2009-2014 Bitcoin Developers
+        <translation>Copyright © 2009-2014 Grantcoin Developers
 Ini adalah perangkat lunak eksperimental.
 Didistribusikan di bawah lisensi software MIT / X11, melihat file terlampir license.txt or http://www.opensource.org/licenses/mit-license.php.
 Produk ini berisi software yang dikembangkan oleh OpenSSL Project untuk digunakan dalam OpenSSL Toolkit (http://www.openssl.org/) dan software kriptografi yang ditulis oleh Eric Young (eay@cryptsoft.com) dan software UPnP yang ditulis oleh Thomas Bernard.</translation>
@@ -304,7 +304,7 @@ Apakah Anda yakin ingin mengenkripsi dompet Anda?</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>GrantcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="191"/>
         <source>&amp;Overview</source>
@@ -1775,8 +1775,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="457"/>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Peringatan: Alamat Bitcoin tidak valid</translation>
+        <source>Warning: Invalid Grantcoin address</source>
+        <translation>Peringatan: Alamat Grantcoin tidak valid</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="466"/>
@@ -2824,8 +2824,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     <message>
         <location filename="../bitcoinstrings.cpp" line="67"/>
         <source>
-SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Pilihan SSL: (lihat Bitcoin Wiki untuk instruksi pemasangan SSL)</translation>
+SSL options: (see the Grantcoin Wiki for SSL setup instructions)</source>
+        <translation>Pilihan SSL: (lihat Grantcoin Wiki untuk instruksi pemasangan SSL)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="70"/>

@@ -26,7 +26,7 @@
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="133"/>
-        <source>Copyright © 2009-2014 Bitcoin Developers
+        <source>Copyright © 2009-2014 Grantcoin Developers
 
 This is experimental software.
 
@@ -300,7 +300,7 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>GrantcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="191"/>
         <source>&amp;Overview</source>
@@ -1767,7 +1767,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="457"/>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Grantcoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2818,7 +2818,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../bitcoinstrings.cpp" line="67"/>
         <source>
-SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+SSL options: (see the Grantcoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
